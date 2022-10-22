@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F277BBF28F4FA1D00ECB234 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 4F277BBE28F4FA1D00ECB234 /* Charts */; };
+		4F277BC128F4FA4300ECB234 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F277BC028F4FA4300ECB234 /* Bar.swift */; };
+		4F277BC328F4FBB700ECB234 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F277BC228F4FBB700ECB234 /* ChartData.swift */; };
+		4F277BC728F5160100ECB234 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F277BC628F5160100ECB234 /* Line.swift */; };
 		4F3B9F2028F4F94700E1B4E6 /* OSSChartsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B9F1F28F4F94700E1B4E6 /* OSSChartsSampleApp.swift */; };
 		4F3B9F2228F4F94700E1B4E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B9F2128F4F94700E1B4E6 /* ContentView.swift */; };
 		4F3B9F2428F4F94800E1B4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3B9F2328F4F94800E1B4E6 /* Assets.xcassets */; };
@@ -14,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F277BC028F4FA4300ECB234 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		4F277BC228F4FBB700ECB234 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		4F277BC628F5160100ECB234 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		4F3B9F1C28F4F94700E1B4E6 /* OSSChartsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSSChartsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3B9F1F28F4F94700E1B4E6 /* OSSChartsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSSChartsSampleApp.swift; sourceTree = "<group>"; };
 		4F3B9F2128F4F94700E1B4E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F277BBF28F4FA1D00ECB234 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,9 @@
 				4F3B9F2128F4F94700E1B4E6 /* ContentView.swift */,
 				4F3B9F2328F4F94800E1B4E6 /* Assets.xcassets */,
 				4F3B9F2528F4F94800E1B4E6 /* Preview Content */,
+				4F277BC028F4FA4300ECB234 /* Bar.swift */,
+				4F277BC228F4FBB700ECB234 /* ChartData.swift */,
+				4F277BC628F5160100ECB234 /* Line.swift */,
 			);
 			path = OSSChartsSample;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = OSSChartsSample;
+			packageProductDependencies = (
+				4F277BBE28F4FA1D00ECB234 /* Charts */,
+			);
 			productName = OSSChartsSample;
 			productReference = 4F3B9F1C28F4F94700E1B4E6 /* OSSChartsSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 4F3B9F1328F4F94700E1B4E6;
+			packageReferences = (
+				4F277BBD28F4FA1D00ECB234 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 4F3B9F1D28F4F94700E1B4E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F3B9F2228F4F94700E1B4E6 /* ContentView.swift in Sources */,
+				4F277BC128F4FA4300ECB234 /* Bar.swift in Sources */,
+				4F277BC328F4FBB700ECB234 /* ChartData.swift in Sources */,
 				4F3B9F2028F4F94700E1B4E6 /* OSSChartsSampleApp.swift in Sources */,
+				4F277BC728F5160100ECB234 /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F277BBD28F4FA1D00ECB234 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F277BBE28F4FA1D00ECB234 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F277BBD28F4FA1D00ECB234 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F3B9F1428F4F94700E1B4E6 /* Project object */;
 }
